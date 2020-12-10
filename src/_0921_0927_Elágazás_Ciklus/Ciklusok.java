@@ -1,6 +1,7 @@
 package _0921_0927_Elágazás_Ciklus;
 
 public class Ciklusok {
+
     public static void main(String[] args) {
         /*int n = 1;
         int x = 2;
