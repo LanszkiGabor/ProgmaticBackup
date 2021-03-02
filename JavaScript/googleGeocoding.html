@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geocoding</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Oy37hJ9cUavYEqmMBNVhluwAX_A4HQg">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="googleGeocoding.js"></script>
+</head>
+<body>
+<div id="container">
+    <h1><b>Write the address</b></h1>
+    <div class="mb-3 row" id="inputField">
+        <div class="col-sm-5">
+            <input type="text" class="form-control" id="input"
+                   placeholder="Pld 1036 Budapest, Csemete utca 10. vagy Ors Vezer ter">
+            <button id="submitButton" type="button" class="btn btn-primary">Submit</button>
+
+        </div>
+    </div>
+    <div id="map" style="height: 600px"></div>
+</div>
+
+</body>
+</html>

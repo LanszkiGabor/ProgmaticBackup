@@ -1,0 +1,36 @@
+a{
+    color: blue;
+    font-size: 20px;
+}
+
+.dash{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.def{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.full{
+    color: deeppink;
+}
+
+.links{
+    background-color: black;
+    float: right;
+}
+
+h1{
+    padding-top: 60px;
+}
+
+body{
+    background-image: url("topography.png");
+}
+
+p{
+    font-family: 'Courier Prime', monospace;
+}

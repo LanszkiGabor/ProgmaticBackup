@@ -1,0 +1,39 @@
+.box{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.narrow-column{
+    width: 300px;
+    border: solid black;
+    padding: 10px;
+    float: left;
+}
+
+.wide-column{
+    width: 600px;
+    background-color: aqua;
+    padding: 10px;
+    clear: both;
+}
+
+.wrapper{
+    width: 600px;
+    background-color: yellow;
+    border: solid black;
+}
+
+.content{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: dashed brown;
+    float: left;
+}
+
+.footer{
+    background-color: aqua;
+    clear: both;
+}

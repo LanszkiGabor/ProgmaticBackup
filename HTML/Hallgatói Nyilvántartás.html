@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hallgatói Nyilvántartás</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+<div class="container"><h1 class="pt-5">Hallgatói nyilvántartás</h1>
+    <button class="btn btn-success">Hozzáadás</button>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Név</th>
+            <th scope="col">E-mail cím</th>
+            <th scope="col">Életkor</th>
+            <th scope="col">Nem</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Tank Aranka</th>
+            <td>tank-aranka@progmatic.hu</td>
+            <td>51</td>
+            <td>nő</td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Módosít</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">Töröl</button></td></tr>
+        </tr>
+        <tr>
+            <th scope="row">Techno Kolos</th>
+            <td>techno-kolos@progmatic.hu</td>
+            <td>23</td>
+            <td>férfi</td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Módosít</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">Töröl</button></td></tr>
+        </tr>
+        <tr>
+            <th scope="row">Citad Ella</th>
+            <td>citad-ella@progmatic.hu</td>
+            <td>28</td>
+            <td>nő</td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Módosít</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">Töröl</button></td></tr>
+        </tr>
+        <tr>
+            <th scope="row">Feles Elek</th>
+            <td>feles-elek@progmatic.hu</td>
+            <td>24</td>
+            <td>férfi</td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Módosít</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">Töröl</button></td></tr>
+        </tr>
+        <tr><th scope="row">Fá Zoltán</th>
+            <td>fa-zoltan@progmatic.hu</td>
+            <td>25</td>
+            <td>férfi</td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Módosít</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">Töröl</button></td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h6>Tanuló Hozzáadása</h6>
+                <h6>Tanuló Szerkesztése</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <label>Név</label><br>
+                <input type="text" class="form-control"><br>
+                <label>Email cím</label><br>
+                <input type="email" class="form-control"><br>
+                <label>Életkor</label><br>
+                <input type="number" class="form-control"><br>
+                <label>Nem:</label>
+                <select>
+                    <option>Nő</option>
+                    <option>Férfi</option>
+                </select><br>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary">Mégse</button>
+                <button type="button" class="btn btn-primary">Mentés</button>
+                <button type="button" class="btn btn-success">Hozzáadás</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Megerősítés</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <b>Biztosan törölni akarod a tanulót?</b>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
+                <button type="button" class="btn btn-danger">Törlés</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
